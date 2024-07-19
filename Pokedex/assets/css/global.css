@@ -21,3 +21,21 @@ body{
     justify-content: space-between;
     margin-bottom: 0.25rem;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.pagination button{
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color:rgb(182, 182, 249);
+    color: #fff;
+    cursor: pointer;
+}
