@@ -87,6 +87,13 @@
     border-radius: 0.5rem;
 }
 
+.pokeheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+}
+
 .pokemon .number{
     color: #000;
     opacity: 0.3;
