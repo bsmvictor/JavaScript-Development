@@ -8,7 +8,8 @@ let offset = 0;
 function LoadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHml = pokemons.map((pokemon) =>
-            `<li class="pokemon ${pokemon.type}">
+            `<div class="card">
+                <li class="pokemon ${pokemon.type}">
                     <div class="pokeheader">
                         <span class="name">${pokemon.name}</span>
                         <span class="number">#${pokemon.number}</span>
@@ -21,6 +22,7 @@ function LoadPokemonItens(offset, limit) {
                         <img src="${pokemon.photo}"
                             alt="${pokemon.name}">
                     </div>
+                </div>
                 </li>
             `).join('')
 
